@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <EditText
+        android:hint="Enter Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext"
+        android:layout_weight="0.08"
+        android:textSize="30dp"
+        android:paddingLeft="120dp"
+        android:paddingTop="30dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.24">
+
+        <TextView
+            android:text="SpeechRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:textSize="30dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="PitchRate"
+            android:layout_width="184dp"
+            android:layout_height="65dp"
+            android:id="@+id/textView3"
+            android:textSize="30dp"
+            android:layout_weight="0.34" />
+
+        <Spinner
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="63dp">
+
+        <TextView
+            android:text="Language"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:id="@+id/textView4"
+            android:layout_weight="1"
+            android:textSize="30dp"/>
+
+        <RadioButton
+            android:text="UK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:theme="@style/MyRadioButton"
+            />
+
+        <RadioButton
+            android:text="US"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3"
+            android:layout_weight="1"
+            android:theme="@style/MyRadioButton"
+            />
+    </LinearLayout>
+
+    <Button
+        android:text="SPEAK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_weight="0.15"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>
